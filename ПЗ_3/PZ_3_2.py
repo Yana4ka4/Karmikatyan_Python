@@ -1,4 +1,4 @@
-while True:
+while True: # обработка исключений
     try:
         number = int(input('Введите целое число: '))
 

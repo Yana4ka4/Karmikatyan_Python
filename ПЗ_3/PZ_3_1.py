@@ -5,9 +5,9 @@ while True: # обработка исключений
         C = int(input("Введите число C: "))
 
         if A > 0 and B > 0 and C > 0:
-            print("Высказывание истинно: True")
+            print("Высказывание истинно")
             break
         else:
-            print("Высказывание истинно: False")
+            print("Высказывание ложно")
     except ValueError:
         print("Введите число!")

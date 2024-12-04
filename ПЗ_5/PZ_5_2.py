@@ -4,9 +4,9 @@
 def SortDec3(A, B, C):
   if A < B:
     A, B = B, A
-  elif A < C:
+  if A < C:
     A, C = C, A
-  elif B < C:
+  if B < C:
     B, C = C, B
   return A, B, C
 

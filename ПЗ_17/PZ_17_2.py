@@ -1,7 +1,6 @@
 # Найти факториал произвольного целого числа.
 
 import tkinter as tk
-from tkinter import messagebox
 
 def fact():
     try:

@@ -7,13 +7,15 @@ def fact():
     try:
         n = int(entry.get())
         if n < 0:
-            raise ValueError
+            result["text"] = "Ошибка: введите неотрицательное число"
+            return
         f = 1
         for i in range(2, n + 1):
             f *= i
         result["text"] = f"Факториал: {f}"
     except:
-        messagebox.showerror("Ошибка", "Введите неотрицательное целое число!")
+        result["text"] = "Ошибка: введите целое число"
+
 
 root = tk.Tk()
 root.title("Факториал")
